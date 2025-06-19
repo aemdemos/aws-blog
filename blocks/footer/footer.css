@@ -1,20 +1,105 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #141f2e; /* AWS dark blue */
+  color: #fff;
+  font-size: 16px;
+  padding: 40px 0 0 0;
 }
 
-footer .footer > div {
-  margin: auto;
+.footer {
   max-width: 1200px;
+  margin: auto;
   padding: 40px 24px 24px;
 }
 
-footer .footer p {
-  margin: 0;
+/* Use CSS columns to create the layout */
+.footer > div {
+  column-count: 4;
+  column-gap: 40px;
+  column-fill: balance;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+.footer h2 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-weight: 700;
+  break-after: avoid;
+}
+
+/* Special styling for Language section - make it span full width */
+.footer h2:last-of-type {
+  column-span: all;
+  margin-top: 32px;
+  padding-top: 16px;
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Language section content should also span full width and be white */
+.footer h2:last-of-type + ul,
+.footer h2:last-of-type + p {
+  column-span: all;
+  margin-top: 0;
+  color: #fff;
+}
+
+/* Make sure language links are white */
+.footer h2:last-of-type + ul a,
+.footer h2:last-of-type + p a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer h2:last-of-type + ul a:hover,
+.footer h2:last-of-type + p a:hover {
+  color: #ff9900;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  break-inside: avoid;
+}
+
+.footer li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #ff9900; /* AWS orange */
+  text-decoration: underline;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .footer > div {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer > div {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer > div {
+    column-count: 1;
+  }
+
+  .footer {
+    padding: 24px 12px;
   }
 }

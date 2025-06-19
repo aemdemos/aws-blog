@@ -1,268 +1,523 @@
-/* header and nav layout */
-header .nav-wrapper {
-  background-color: var(--background-color);
-  width: 100%;
-  z-index: 2;
-  position: fixed;
+/* AWS Blog Header Styles */
+:root {
+  --aws-orange: #ff9900;
+  --aws-dark-blue: #232f3e;
+  --aws-light-blue: #146eb4;
+  --aws-navy: #141f2e;
+  --aws-text-white: #ffffff;
+  --aws-text-gray: #879196;
+  --aws-border-gray: #373a3c;
+  --aws-hover-blue: #0972d3;
+  /* Update header height to accommodate our 3-row layout */
+  --nav-height: 64px;
+  --header-height: 64px;
 }
 
+/* Header wrapper */
+header .nav-wrapper {
+  background-color: var(--aws-navy);
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Main navigation container */
 header nav {
   box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
-  align-items: center;
-  gap: 0 24px;
-  margin: auto;
-  max-width: 1248px;
-  height: var(--nav-height);
-  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   font-family: var(--body-font-family);
 }
 
-header nav[aria-expanded='true'] {
-  grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
-  overflow-y: auto;
-  min-height: 100dvh;
+/* Top utility bar (nav-brand) - Contains logo and utility links */
+header nav .nav-brand {
+  background-color: var(--aws-navy);
+  order: 1;
+  width: 100%;
 }
 
-@media (width >= 900px) {
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
-  }
-
-  header nav[aria-expanded='true'] {
-    min-height: 0;
-    overflow: visible;
-  }
+header nav .nav-brand .default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px 0 32px;
+  max-width: none;
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
 }
 
-header nav p {
+/* AWS Logo styling - Make logo clickable and hide text */
+header nav .nav-brand .default-content-wrapper p {
   margin: 0;
-  line-height: 1;
-}
-
-header nav a:any-link {
-  color: currentcolor;
-}
-
-/* hamburger */
-header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
   display: flex;
   align-items: center;
+  position: relative;
+  padding-top: 4px;
+}
+
+header nav .nav-brand .default-content-wrapper p picture {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+header nav .nav-brand .default-content-wrapper p img {
+  width: 62px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Hide the "AWS Home" text but keep it accessible */
+header nav .nav-brand .default-content-wrapper p a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 62px;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Utility links in nav-brand */
+header nav .nav-brand .default-content-wrapper ul {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
+  justify-content: flex-end;
+  max-width: 70%;
+}
+
+header nav .nav-brand .default-content-wrapper ul li {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+header nav .nav-brand .default-content-wrapper ul li a,
+header nav .nav-brand .default-content-wrapper ul li strong {
+  color: var(--aws-text-white);
+  text-decoration: none;
+  padding: 4px 6px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+header nav .nav-brand .default-content-wrapper ul li a:hover,
+header nav .nav-brand .default-content-wrapper ul li strong:hover {
+  color: var(--aws-hover-blue);
+}
+
+header nav .nav-brand .default-content-wrapper ul li strong {
+  position: relative;
+  cursor: pointer;
+}
+
+header nav .nav-brand .default-content-wrapper ul li strong::after {
+  content: ' ▼';
+  font-size: 8px;
+  margin-left: 2px;
+}
+
+/* Create AWS Account button styling - WHITE BUTTON */
+header nav .nav-brand .default-content-wrapper ul li:last-child {
+  margin-left: 4px;
+}
+
+header nav .nav-brand .default-content-wrapper ul li:last-child a {
+  background-color: #ffffff;
+  color: #232f3e;
+  font-weight: 600;
+  padding: 4px 16px;
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+header nav .nav-brand .default-content-wrapper ul li:has(a[title*="Create an AWS Account"]) a:hover {
+  background-color: #f0f0f0;
+  color: #232f3e;
+}
+
+/* Main navigation (nav-sections) - Contains Amazon Q, Products, etc. */
+header nav .nav-sections {
+  order: 2;
+  background-color: var(--aws-navy);
+  width: 100%;
+}
+
+header nav .nav-sections .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 32px 4px 32px;
+  height: 48px;
+  max-width: none;
+  width: 100%;
+  overflow: visible;
+}
+
+header nav .nav-sections .default-content-wrapper ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  flex: 1;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+header nav .nav-sections .default-content-wrapper ul li {
+  position: relative;
+  flex-shrink: 0;
+}
+
+header nav .nav-sections .default-content-wrapper ul li a {
+  color: var(--aws-text-white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+header nav .nav-sections .default-content-wrapper ul li a:hover {
+    color: var(--aws-hover-blue);
+}
+
+/* Amazon Q button styling - Purple gradient */
+header nav .nav-sections .default-content-wrapper ul li:first-child a {
+  background: linear-gradient(90deg,#a000b8,#5724ff 50%,#003efa);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header nav .nav-sections .default-content-wrapper ul li:first-child a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+  background: linear-gradient(90deg,#f299ff,#b2a8ff 50%,#94afff);
+  color: white;
+}
+
+/* Blog navigation (nav-tools) - Contains AWS Blog Home, Blogs, Editions */
+header nav .nav-tools {
+  order: 3;
+  background-color: #f2f3f3;
+  border-top: 1px solid #d5dbdb;
+  width: 100%;
+}
+
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  max-width: none;
+  width: 100%;
+  height: 32px;
+}
+
+header nav .nav-tools .default-content-wrapper ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+header nav .nav-tools .default-content-wrapper ul li a,
+header nav .nav-tools .default-content-wrapper ul li strong {
+  color: #232f3e;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+header nav .nav-tools .default-content-wrapper ul li a:hover {
+    color: var(--aws-hover-blue);
+}
+
+header nav .nav-tools .default-content-wrapper ul li strong {
+  position: relative;
+  cursor: pointer;
+}
+
+header nav .nav-tools .default-content-wrapper ul li strong:hover {
+    color: var(--aws-hover-blue);
+}
+
+header nav .nav-tools .default-content-wrapper ul li strong::after {
+  content: ' ▼';
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+/* Hamburger menu */
+header nav .nav-hamburger {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
 }
 
 header nav .nav-hamburger button {
-  height: 22px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  color: inherit;
-  overflow: initial;
-  text-overflow: initial;
-  white-space: initial;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--aws-text-white);
 }
 
 header nav .nav-hamburger-icon,
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
-  box-sizing: border-box;
   display: block;
-  position: relative;
   width: 20px;
+  height: 2px;
+  background: var(--aws-text-white);
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.2s ease;
 }
 
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   content: '';
   position: absolute;
-  background: currentcolor;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
-}
-
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
+header nav .nav-hamburger-icon::before {
   top: -6px;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
+header nav .nav-hamburger-icon::after {
   top: 6px;
 }
 
 header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
+  background: transparent;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
+header nav[aria-expanded='true'] .nav-hamburger-icon::before {
   transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
+  top: 0;
 }
 
 header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
   transform: rotate(-45deg);
+  top: 0;
 }
 
-@media (width >= 900px) {
+/* Mobile and responsive styles */
+@media (width < 1400px) {
+  header nav .nav-brand .default-content-wrapper ul {
+    gap: 3px;
+  }
+
+  header nav .nav-sections .default-content-wrapper ul {
+    gap: 14px;
+  }
+}
+
+@media (width < 1300px) {
+  header nav .nav-brand .default-content-wrapper ul {
+    max-width: 65%;
+  }
+
+  header nav .nav-brand .default-content-wrapper ul li:has(a[title*="Create an AWS Account"]) a {
+    padding: 4px 8px;
+  }
+}
+
+@media (width < 1200px) {
+  header nav .nav-brand .default-content-wrapper ul {
+    max-width: 60%;
+    gap: 2px;
+  }
+
+  header nav .nav-brand .default-content-wrapper ul li a,
+  header nav .nav-brand .default-content-wrapper ul li strong {
+    padding: 4px 4px;
+  }
+
+  header nav .nav-brand .default-content-wrapper ul li:has(a[title*="Create an AWS Account"]) a {
+    padding: 4px 6px;
+  }
+}
+
+@media (width < 1024px) {
+  :root {
+    --nav-height: 156px;
+    --header-height: 156px;
+  }
+
+  header nav .nav-brand .default-content-wrapper {
+    min-height: 72px;
+  }
+
+  header nav .nav-brand .default-content-wrapper ul {
+    max-width: 100%;
+    gap: 4px;
+    margin-top: 8px;
+  }
+}
+
+@media (width < 768px) {
   header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-/* brand */
-header .nav-brand {
-  grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
-}
-
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
-}
-
-/* sections */
-header nav .nav-sections {
-  grid-area: sections;
-  flex: 1 1 auto;
-  display: none;
-  visibility: hidden;
-}
-
-header nav[aria-expanded='true'] .nav-sections {
-  display: block;
-  visibility: visible;
-  align-self: start;
-}
-
-header nav .nav-sections ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
-}
-
-header nav .nav-sections ul > li {
-  font-weight: 500;
-}
-
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
-}
-
-header nav .nav-sections ul > li > ul > li {
-  font-weight: 400;
-}
-
-@media (width >= 900px) {
-  header nav .nav-sections {
     display: block;
-    visibility: visible;
-    white-space: nowrap;
   }
 
-  header nav[aria-expanded='true'] .nav-sections {
-    align-self: unset;
-  }
-
-  header nav .nav-sections .nav-drop {
-    position: relative;
-    padding-right: 16px;
-    cursor: pointer;
-  }
-
-  header nav .nav-sections .nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentcolor;
-    border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
-  }
-
-  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
-  }
-
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
+  header nav .nav-brand,
+  header nav .nav-sections,
+  header nav .nav-tools {
     display: none;
-    position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
+  header nav[aria-expanded='true'] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--aws-navy);
+    z-index: 1000;
+    padding: 60px 16px 16px;
+    overflow-y: auto;
+  }
+
+  header nav[aria-expanded='true'] .nav-brand,
+  header nav[aria-expanded='true'] .nav-sections,
+  header nav[aria-expanded='true'] .nav-tools {
     display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
-    white-space: initial;
+    order: unset;
+    background: transparent;
+    border: none;
+    padding: 16px 0;
+    width: auto;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+  header nav[aria-expanded='true'] .nav-brand .default-content-wrapper,
+  header nav[aria-expanded='true'] .nav-sections .default-content-wrapper,
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    height: auto;
+    width: auto;
+    min-height: auto;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+  header nav[aria-expanded='true'] .nav-brand .default-content-wrapper ul,
+  header nav[aria-expanded='true'] .nav-sections .default-content-wrapper ul,
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  header nav[aria-expanded='true'] .nav-brand .default-content-wrapper ul li,
+  header nav[aria-expanded='true'] .nav-sections .default-content-wrapper ul li,
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper ul li {
+    width: 100%;
+    border-bottom: 1px solid var(--aws-border-gray);
+    padding: 12px 0;
+    display: block !important;
+  }
+
+  header nav[aria-expanded='true'] .nav-brand .default-content-wrapper ul li a,
+  header nav[aria-expanded='true'] .nav-brand .default-content-wrapper ul li strong,
+  header nav[aria-expanded='true'] .nav-sections .default-content-wrapper ul li a,
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper ul li a,
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper ul li strong {
     padding: 8px 0;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+  }
+
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper ul li a,
+  header nav[aria-expanded='true'] .nav-tools .default-content-wrapper ul li strong {
+    color: var(--aws-text-white);
+  }
+
+  /* Show AWS logo text on mobile */
+  header nav[aria-expanded='true'] .nav-brand .default-content-wrapper p a {
+    position: static;
+    text-indent: 0;
+    color: var(--aws-text-white);
+    font-size: 18px;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+  }
+
+  body:has(header nav[aria-expanded='true']) {
+    overflow: hidden;
+  }
+
+  /* Mobile header height */
+  :root {
+    --nav-height: 64px;
+    --header-height: 64px;
   }
 }
 
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
+/* Desktop layout */
+@media (width >= 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header nav .nav-brand {
+    width: 100%;
+    order: 1;
+  }
+
+  header nav .nav-sections {
+    order: 2;
+    width: 100%;
+  }
+
+  header nav .nav-tools {
+    width: 100%;
+    order: 3;
+  }
+}
+
+/* Add spacing for main content */
+main {
+  padding-top: var(--nav-height);
+}
+
+/* Ensure header has proper height */
+header {
+  min-height: var(--nav-height);
 }
