@@ -1,0 +1,383 @@
+{
+  "originUrl": "https://aws.amazon.com/blogs/",
+  "lastCrawled": "https://aws.amazon.com/blogs/",
+  "urls": [
+    {
+      "url": "https://aws.amazon.com/blogs/",
+      "source": "CRAWL",
+      "targetPath": "/blogs",
+      "id": "c93a80fda71d0e4d4b11bea31ca37edf6a6ec96c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-knowledge-bases-now-supports-advanced-parsing-chunking-and-query-reformulation-giving-greater-control-of-accuracy-in-rag-based-applications/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/machine-learning/amazon-bedrock-knowledge-bases-now-supports-advanced-parsing-chunking-and-query-reformulation-giving-greater-control-of-accuracy-in-rag-based-applications/",
+      "id": "c0f0863b13b4ad6970747820d225a7a2990bf357"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/quantum-computing/community-detection-in-complex-networks-using-hybrid-quantum-annealing-on-amazon-braket-part-i/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/quantum-computing/community-detection-in-complex-networks-using-hybrid-quantum-annealing-on-amazon-braket-part-i/",
+      "id": "750b4b97776bbf96fc586aa959c64e895da6f6d8"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/database/tag/amazon-elasticache/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/database/tag/amazon-elasticache/",
+      "id": "5b47bf0d3193d1402c602c4e1c618696942519db"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/containers/aws-fargate-launches-platform-version-1-4/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/containers/aws-fargate-launches-platform-version-1-4/",
+      "id": "71d7174d0b89eb02e706b61644b8be84f0df94c6"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/iot/tag/aws-iot/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/iot/tag/aws-iot/",
+      "id": "f8498a0e5a497430947450504c4130948c42e498"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/publicsector/large-scale-ai-digital-pathology-without-heavy-lifting/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/publicsector/large-scale-ai-digital-pathology-without-heavy-lifting/",
+      "id": "138de46f433980954d4c3c6cb8a4c198276dba64"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/automatically-resolve-security-hub-findings-for-resources-that-no-longer-exist/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/security/automatically-resolve-security-hub-findings-for-resources-that-no-longer-exist/",
+      "id": "39130bd18fdf1948e4d63885cb0e169265fd00db"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/media/part-3-live-and-vod-to-live-hdr-workflows-on-aws/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/media/part-3-live-and-vod-to-live-hdr-workflows-on-aws/",
+      "id": "53130962ff9a9dba31b2ff5c1b1617c7693575fc"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/compute/category/artificial-intelligence/aws-inferentia/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/compute/category/artificial-intelligence/aws-inferentia/",
+      "id": "b57f35e9df4f139e87f1a7efe373b932eb6ec829"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/containers/tag/availability-zones/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/containers/tag/availability-zones",
+      "id": "25b33b5c5e847dc8abe4f8161e59521f85d7179a"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/media/tag/fuji-tv/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/media/tag/fuji-tv",
+      "id": "a72953ffa92c3beae0a96ddd3935b1565a881bf2"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/devops/balancing-governance-and-agility-with-aws-codebuild/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/devops/balancing-governance-and-agility-with-aws-codebuild",
+      "id": "05bf38a07df93e6df3b3954487f9d3a206bd46b3"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/an-introduction-to-preparing-your-own-dataset-for-llm-training/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/machine-learning/an-introduction-to-preparing-your-own-dataset-for-llm-training",
+      "id": "7934c880ff174535963fe21b9a51534885f32925"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/amazon-translate-now-supports-office-documents/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/amazon-translate-now-supports-office-documents",
+      "id": "98c192aa5444084b2da64dea5b42e90d350b2fc8"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/8/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/8",
+      "id": "648177c91ac372d8627ced53da375b4528615ff2"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/9/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/9",
+      "id": "c244194d893c28cb025fce02243aa2df73b5f624"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/now-available-in-amazon-sagemaker-ec2-p3dn-gpu-instances/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/now-available-in-amazon-sagemaker-ec2-p3dn-gpu-instances",
+      "id": "2ef73ec31e406d75d2a388b460dc39ea5f32126c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/additional-reserved-instance-options-for-the-relational-database-service/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/additional-reserved-instance-options-for-the-relational-database-service",
+      "id": "ea046e59804fe7753cae0173b3171fdd908ac059"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/4/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/4",
+      "id": "829552f4e08c90dbcfc106a603d4d075c2286c46"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/5/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/5",
+      "id": "8501f7b398abf9784dcf8077bf7376a94f08f7de"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/awsforsap/tag/aws/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/awsforsap/tag/aws",
+      "id": "543a13276dd1051736afea4b82a55424c5100d79"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/6/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/6",
+      "id": "25b33b5c5e847dc8abe4f8161e59521f85d7179a"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/7/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/messaging-and-targeting/category/messaging/amazon-simple-email-service-ses/page/7",
+      "id": "c7d9324ef3f196b1ed3ac3192a55166f7d2baf6c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/tag/high/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/security/tag/high",
+      "id": "102b325d24f1a50cfb13e567d047deed2402f281"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/big-data/how-fresenius-medical-care-aims-to-save-dialysis-patient-lives-using-real-time-predictive-analytics-on-aws/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/big-data/how-fresenius-medical-care-aims-to-save-dialysis-patient-lives-using-real-time-predictive-analytics-on-aws/",
+      "id": "b9a51d534337a2018c2ade83a42a10118e65acf9"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/modernizing-with-aws/know-your-aws-options-for-microsoft-windows-server-2012-end-of-support/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/modernizing-with-aws/know-your-aws-options-for-microsoft-windows-server-2012-end-of-support/",
+      "id": "778267d4d4d252e0518c2e607de70138f387f779"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/apn/category/security-identity-compliance/aws-organizations/page/2/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/apn/category/security-identity-compliance/aws-organizations/page/2/",
+      "id": "e6f5f36b80496b7fe84781c5aaa8b2210f2f37ae"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/mobile/get-started-with-the-aws-device-farm-cli-and-calabash-part-1-creating-a-device-farm-run-for-android-calabash-test-scripts/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/mobile/get-started-with-the-aws-device-farm-cli-and-calabash-part-1-creating-a-device-farm-run-for-android-calabash-test-scripts/",
+      "id": "3ed8f883619d5db5ee20d87c659c37c21b220e22"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/mobile/amplify-flutter-announces-general-availability-for-web-and-desktop-support/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/mobile/amplify-flutter-announces-general-availability-for-web-and-desktop-support/",
+      "id": "62837f46dc00e60fe24d2cccd96a251318350fff"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/tag/office-365/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/security/tag/office-365/",
+      "id": "ae4293d0ad579d1d3b29462402eb57f226f1623e"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/apn/unifying-cloud-infrastructure-and-application-performance-data-with-appdynamics-and-amazon-cloudwatch/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/apn/unifying-cloud-infrastructure-and-application-performance-data-with-appdynamics-and-amazon-cloudwatch/",
+      "id": "59ad6729ef307e2993ed81647399ca8b810d58f4"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/database/tag/contact-tracing/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/database/tag/contact-tracing/",
+      "id": "c7d9324ef3f196b1ed3ac3192a55166f7d2baf6c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/mobile/tag/nextjs/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/mobile/tag/nextjs/",
+      "id": "d19e553a01300c2bcd14f7ac56494c8797b27ef8"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/apn/tag/application-integration/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/apn/tag/application-integration/",
+      "id": "d925c4a9cab6b38a96e88461135b05c50a540f09"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/media/tag/nomad-cms/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/media/tag/nomad-cms/",
+      "id": "a72953ffa92c3beae0a96ddd3935b1565a881bf2"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/media/category/storage/aws-snowball/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/media/category/storage/aws-snowball/",
+      "id": "fb46da35f7c818e5bba1a6cdc650cfc47353fb37"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/modernizing-with-aws/datavail-modernizing-databases-on-aws/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/modernizing-with-aws/datavail-modernizing-databases-on-aws/",
+      "id": "ffa887b89d054f3573a0d21218d6a7c8cfba697e"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/hybrid-security-inspection-architectures-with-aws-cloud-wan-and-aws-direct-connect/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/networking-and-content-delivery/hybrid-security-inspection-architectures-with-aws-cloud-wan-and-aws-direct-connect/",
+      "id": "05d5891654a19814b319d4fc08c6a7cca15a9e51"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-cloud-security-vulnerability-assessment-and-alerting-using-amazon-bedrock/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/machine-learning/automate-cloud-security-vulnerability-assessment-and-alerting-using-amazon-bedrock/",
+      "id": "c0f0863b13b4ad6970747820d225a7a2990bf357"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/forcecom-for-amazon-web-services/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/forcecom-for-amazon-web-services/",
+      "id": "3e64343bca445bb747f1cffb80461601c67c9501"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/announcing-an-update-to-iam-role-trust-policy-behavior/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/security/announcing-an-update-to-iam-role-trust-policy-behavior/",
+      "id": "f6dcdf589066e9f3378ac485346a3b773afbeb43"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/publicsector/whats-new-for-aws-storage-ingestion-services-from-reinvent-2016/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/publicsector/whats-new-for-aws-storage-ingestion-services-from-reinvent-2016/",
+      "id": "2ef73ec31e406d75d2a388b460dc39ea5f32126c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/storage/managing-storage-on-windows-servers-with-amazon-fsx-for-netapp-ontap/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/storage/managing-storage-on-windows-servers-with-amazon-fsx-for-netapp-ontap/",
+      "id": "80474f90108cbe6f33683c05046cf636dbabcb39"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/database/tag/mongodb-compatibility/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/database/tag/mongodb-compatibility/",
+      "id": "80474f90108cbe6f33683c05046cf636dbabcb39"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/industries/tag/management-information/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/industries/tag/management-information/",
+      "id": "4d975c46d2b576b88ea466adf1820336a48a3b40"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/apn/tag/dxc-technology/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/apn/tag/dxc-technology/",
+      "id": "d925c4a9cab6b38a96e88461135b05c50a540f09"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/get-ready-for-aws-reinvent-2017/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/get-ready-for-aws-reinvent-2017/",
+      "id": "fa40f273bd334fcacf11a1f6ca82625b2c75d6c4"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/awsmarketplace/category/alexa/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/awsmarketplace/category/alexa/",
+      "id": "0ef7dee18a0e85631701320d9f7b3d3ebb91cd17"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/author/lmv/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/author/lmv/",
+      "id": "42b85a5727cb153c0580862c9dc211247a0aff0a"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/mt/alarms-incident-management-and-remediation-in-the-cloud-with-amazon-cloudwatch/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/mt/alarms-incident-management-and-remediation-in-the-cloud-with-amazon-cloudwatch/",
+      "id": "d19e553a01300c2bcd14f7ac56494c8797b27ef8"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/tag/hids/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/security/tag/hids/",
+      "id": "e2c270c629402e8263690d25994cc907960ef9cd"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/2008-aws-startup-challenge-finalists/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/aws/2008-aws-startup-challenge-finalists/",
+      "id": "ae741a050e55cc4f1d51e8c3b8b6158624d0a466"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/media/tag/well-architected-review/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/media/tag/well-architected-review/",
+      "id": "7c3bb3a05b8133a3edd5338c448891f27f55d558"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/contact-center/tag/syed-rehan/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/contact-center/tag/syed-rehan/",
+      "id": "aabd8d6bdde4a55cb98f6e21221221b494f4ae09"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/opensource/diving-into-oci-image-and-distribution-1-1-support-in-amazon-ecr/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/opensource/diving-into-oci-image-and-distribution-1-1-support-in-amazon-ecr/",
+      "id": "fbd5c805189f3cc054a8f7f6f9ba2f04793c9246"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/publicsector/tag/data-lakes/page/2/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/publicsector/tag/data-lakes/page/2/",
+      "id": "2ef73ec31e406d75d2a388b460dc39ea5f32126c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/architecture/field-notes-automate-saml-2-0-federation-using-aws-control-tower-and-azure-active-directory/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/architecture/field-notes-automate-saml-2-0-federation-using-aws-control-tower-and-azure-active-directory/",
+      "id": "5a54a6ea9f15c60db45adcda51db4ac2abacadab"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/publicsector/tag/data-lakes/page/3/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/publicsector/tag/data-lakes/page/3/",
+      "id": "2ef73ec31e406d75d2a388b460dc39ea5f32126c"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/business-productivity/tag/multi-region/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/business-productivity/tag/multi-region/",
+      "id": "4d975c46d2b576b88ea466adf1820336a48a3b40"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/customizing-coding-companions-for-organizations/",
+      "source": "CRAWL",
+      "targetPath": "/blogs/machine-learning/customizing-coding-companions-for-organizations/",
+      "id": "f7af1b09aa86b3c5f81478c25b159a43f4a7ca0f"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "crawl",
+    "logger": {}
+  },
+  "extractionErrors": []
+}
